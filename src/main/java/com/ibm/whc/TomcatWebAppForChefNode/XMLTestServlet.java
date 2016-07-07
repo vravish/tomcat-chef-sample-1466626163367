@@ -23,7 +23,7 @@ public class XMLTestServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.getWriter().println("Webapp Home: " + new File("${CATALINA_HOME}/webapps/TomcatWebAppForChefNode").getCanonicalPath());
-//		response.getWriter().println(new ArrayList<String>(Arrays.asList(new File(".").list())));
+		response.getWriter().println(new ArrayList<String>(Arrays.asList(new File(".").list())));
 //		BufferedReader br = new BufferedReader(new FileReader("${CATALINA_HOME}/webapps/TomcatWebAppForChefNode/TEST-com.ibmwatsonhealth.devopsservices.swaggertestasset.TestNGTestSuite.xml"));
 //		for (String line = br.readLine(); line != null; line = br.readLine()) {
 //			response.getWriter().println(line);
