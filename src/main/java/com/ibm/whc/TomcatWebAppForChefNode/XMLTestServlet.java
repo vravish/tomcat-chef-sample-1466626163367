@@ -28,6 +28,7 @@ public class XMLTestServlet extends HttpServlet {
 		for (String line = br.readLine(); line != null; line = br.readLine()) {
 			response.getWriter().println(line);
 		}
+    	response.addIntHeader("exitstatus", 0);
 	}
 
 	/**
