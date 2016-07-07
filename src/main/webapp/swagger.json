@@ -3,20 +3,8 @@
 	host:		"169.44.118.61:9080",
 	basePath:	"/TomcatWebAppForChefNode",
 	paths:	{
-		"/AdditionServlet":	{
+		"/AdditionServlet?a=1&b=2":	{
 			get:	{
-				parameters:	[ {
-					in: "query",
-					name: "a",
-					required: "true",
-					type: "integer"
-				},
-				{
-					in: "query",
-					name: "b",
-					required: "true",
-					type: "integer"
-				} ],
 				produces: [
 					"text/plain",
 					"application/xml"
