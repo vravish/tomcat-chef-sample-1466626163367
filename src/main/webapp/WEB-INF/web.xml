@@ -4,9 +4,20 @@
 		<servlet-name>AdditionServlet</servlet-name>
 		<servlet-class>com.ibm.whc.TomcatWebAppForChefNode.AdditionServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>XMLTestServlet</display-name>
+		<servlet-name>XMLTestServlet</servlet-name>
+		<servlet-class>com.ibm.whc.TomcatWebAppForChefNode.XMLTestServlet</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>AdditionServlet</servlet-name>
 		<url-pattern>/AdditionServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>XMLTestServlet</servlet-name>
+		<url-pattern>/XMLTestServlet</url-pattern>
 	</servlet-mapping>
 </web-app>

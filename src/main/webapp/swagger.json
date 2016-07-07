@@ -1,0 +1,45 @@
+{
+	swagger:	"2.0",
+	host:		"169.44.118.61:9080",
+	basePath:	"/TomcatWebAppForChefNode",
+	paths:	{
+		"/AdditionServlet":	{
+			get:	{
+				parameters:	[ {
+					in: "query",
+					name: "a",
+					required: "true",
+					type: "integer"
+				},
+				{
+					in: "query",
+					name: "b",
+					required: "true",
+					type: "integer"
+				} ],
+				produces: [
+					"text/plain",
+					"application/xml"
+				],
+				responses: {
+					200: {
+						description: "successful operation"
+					}
+				}
+			}
+		},
+		
+		"/XMLTestServlet":	{
+			get:	{
+				produces: [
+					"application/xml"
+				],
+				responses: {
+					200: {
+						description: "successful operation"
+					}
+				}
+			}
+		}
+	}
+}
