@@ -1,6 +1,6 @@
 {
 	swagger:	"2.0",
-	host:		"169.44.118.61:9080",
+	host:		"http://169.44.118.61:8080",
 	basePath:	"/TomcatWebAppForChefNode",
 	paths:	{
 		"/AdditionServlet?a=1&b=2":	{
