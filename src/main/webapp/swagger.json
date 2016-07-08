@@ -1,33 +1,76 @@
 {
-	swagger:	"2.0",
-	host:		"http://169.44.118.61:8080",
-	basePath:	"/TomcatWebAppForChefNode",
-	paths:	{
-		"/AdditionServlet?a=1&b=2":	{
-			get:	{
-				produces: [
-					"text/plain",
-					"application/xml"
-				],
-				responses: {
-					"200": {
-						description: "successful operation"
-					}
-				}
-			}
-		},
-		
-		"/XMLTestServlet":	{
-			get:	{
-				produces: [
-					"application/xml"
-				],
-				responses: {
-					"200": {
-						description: "successful operation"
-					}
-				}
-			}
-		}
-	}
+  "swagger": "2.0",
+  "info": {
+    "description": "This is an addition servlet sample",
+    "version": "1.0.0",
+    "title": "Swagger Addition Servlet",
+    "contact": {
+      "email": "venu@swagger.io"
+    }
+  },
+  "host": "http://169.44.118.61:8080",
+  "basePath": "/TomcatWebAppForChefNode",
+  "tags": [
+    {
+      "name": "pet",
+      "description": "Everything about your Pets",
+      "externalDocs": {
+        "description": "Find out more",
+        "url": "http://swagger.io"
+      }
+    },
+    {
+      "name": "store",
+      "description": "Access to Petstore orders"
+    },
+    {
+      "name": "user",
+      "description": "Operations about user",
+      "externalDocs": {
+        "description": "Find out more about our store",
+        "url": "http://169.44.118.61:8080"
+      }
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/AdditionServlet?a=1&b=2": {
+      "get": {
+        "summary": "Addition servlet",
+        "description": "Returns addition of 2 numbers",
+        "operationId": "findPetsByStatus",
+        "produces": [
+          "application/xml",
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "a",
+            "in": "query",
+            "description": "Parameter 1 required by web service",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "b",
+            "in": "query",
+            "description": "Parameter 2 that is required by service",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://169.44.118.61:8080"
+  }
 }
