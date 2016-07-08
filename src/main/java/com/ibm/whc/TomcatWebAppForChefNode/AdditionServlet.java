@@ -22,7 +22,7 @@ public class AdditionServlet extends HttpServlet {
     	int b = Integer.parseInt(request.getParameter("b"));
     	int sum = a+b;
     	response.getWriter().println("<response><sum>" + sum + "</sum></response>");
-    	response.addIntHeader("exitstatus", 0);
+    	response.addIntHeader("teststatus", 0);
     }
 
 }
