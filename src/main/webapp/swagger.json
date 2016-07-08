@@ -10,7 +10,7 @@
 					"application/xml"
 				],
 				responses: {
-					200: {
+					"200": {
 						description: "successful operation"
 					}
 				}
@@ -23,7 +23,7 @@
 					"application/xml"
 				],
 				responses: {
-					200: {
+					"200": {
 						description: "successful operation"
 					}
 				}
