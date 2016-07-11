@@ -21,9 +21,9 @@ public class AdditionServlet extends HttpServlet {
     	int a = Integer.parseInt(request.getParameter("a"));
     	int b = Integer.parseInt(request.getParameter("b"));
     	int sum = a+b;
-//    	response.getWriter().println("<response><sum>" + sum + "</sum></response>");
-//    	response.addIntHeader("teststatus", 0);
-    	throw new ServletException("Trying to generate an error.");
+    	response.getWriter().println("<response><sum>" + sum + "</sum></response>");
+    	response.addIntHeader("teststatus", 0);
+//    	throw new ServletException("Trying to generate an error.");
     }
 
 }
