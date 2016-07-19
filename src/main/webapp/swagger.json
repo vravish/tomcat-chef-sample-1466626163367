@@ -36,7 +36,7 @@
     "http"
   ],
   "paths": {
-    "/AdditionServlet?a=1&b=2": {
+    "/AdditionServlet": {
       "get": {
         "summary": "Addition servlet",
         "description": "Returns addition of 2 numbers",
@@ -51,7 +51,7 @@
             "in": "query",
             "description": "Parameter 1 required by web service",
             "required": false,
-            "type": "string"
+            "type": "string",
           },
           {
             "name": "b",
