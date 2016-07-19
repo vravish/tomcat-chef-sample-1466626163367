@@ -28,14 +28,14 @@
             "name": "a",
             "in": "query",
             "description": "Parameter 1 required by web service",
-            "required": false,
+            "required": true,
             "type": "string"
           },
           {
             "name": "b",
             "in": "query",
             "description": "Parameter 2 that is required by service",
-            "required": false,
+            "required": true,
             "type": "string"
           }
         ],
