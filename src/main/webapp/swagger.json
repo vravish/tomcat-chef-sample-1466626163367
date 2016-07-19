@@ -8,30 +8,8 @@
       "email": "venu@swagger.io"
     }
   },
-  "host": "http://169.44.118.61:8080",
+  "host": "169.44.118.61:8080",
   "basePath": "/TomcatWebAppForChefNode",
-  "tags": [
-    {
-      "name": "pet",
-      "description": "Everything about your Pets",
-      "externalDocs": {
-        "description": "Find out more",
-        "url": "http://swagger.io"
-      }
-    },
-    {
-      "name": "store",
-      "description": "Access to Petstore orders"
-    },
-    {
-      "name": "user",
-      "description": "Operations about user",
-      "externalDocs": {
-        "description": "Find out more about our store",
-        "url": "http://169.44.118.61:8080"
-      }
-    }
-  ],
   "schemes": [
     "http"
   ],
@@ -51,7 +29,7 @@
             "in": "query",
             "description": "Parameter 1 required by web service",
             "required": false,
-            "type": "string",
+            "type": "string"
           },
           {
             "name": "b",
