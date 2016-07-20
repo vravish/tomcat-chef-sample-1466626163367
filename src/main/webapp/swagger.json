@@ -29,14 +29,16 @@
             "in": "query",
             "description": "Parameter 1 required by web service",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "default": "5"
           },
           {
             "name": "b",
             "in": "query",
             "description": "Parameter 2 that is required by service",
             "required": true,
-            "type": "string"
+            "type": "string",
+            "default": "7"
           }
         ],
         "responses": {
